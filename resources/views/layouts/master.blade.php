@@ -31,6 +31,7 @@
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/landing-page.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/animation.css') }}" rel="stylesheet">
 
 
 
