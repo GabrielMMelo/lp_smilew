@@ -10,6 +10,16 @@
     animation-timing-function: ease-in;
 }
 
+._smilew {
+    animation: _hid 6s;
+    animation-timing-function: ease-in;
+}
+
+._strip{
+    animation: _hid 1.5s;
+    animation-timing-function: ease-in;
+}
+
 ._para{
     animation: _hid 3s;
     animation-timing-function: ease-in;
@@ -60,6 +70,18 @@
     transform: rotate(90deg);
     animation: __i2 10s;
     animation-timing-function: ease-out;
+}
+
+.masthead{
+    background: #a0a0a0;
+    animation: _masthead 5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes _masthead {
+    0% {background: #a0a0a0;}
+    50% {background: #a0a0a0;}
+
 }
 
 @keyframes _hid {

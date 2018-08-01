@@ -11,6 +11,11 @@ class leadController extends Controller
         $lead = new Lead;
         $lead->name = $request->input('name');
         $lead->email = $request->input('email');
+        if ($request->input('needed') == "on")
+            $lead->needed = true;
+        else
+            $lead->needed = false;
+        $lead->type = $request->input('type');
         $lead->save();
 
         return redirect()->back();

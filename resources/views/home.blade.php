@@ -11,10 +11,10 @@
 @section('content')
     {{ Counter::count('home') }}
 <!-- Masthead -->
-<header class="masthead text-white text-center">
+<header class="masthead text-white text-center" style="height: 46rem;">
     <div class="row justify-content-center">
         <div class="col-lg-4 col-md-6 col-sm-6 col-10">
-            <a class="navbar-brand mb-4" href="#"> <img class="img-fluid d-block" src="{{  asset('img/smilew-logo-darkblue.png')  }}"></a>
+            <a class="_smilew navbar-brand mb-4" href="#"> <img class="img-fluid d-block" src="{{  asset('img/smilew-logo-darkblue.png')  }}"></a>
         </div>
     </div>
 
@@ -24,10 +24,10 @@
     <div class="overlay"></div>
     <!--<div class="container">-->
         <div class="row">
-            <div class="col-12 col-xl-12 mx-auto rounded" style="background-color: rgba(255, 255, 255, .8);">
+            <div class="_strip col-12 col-xl-12 mx-auto rounded" style="background-color: rgba(255, 255, 255, .8);">
                 <div class="row justify-content-center my-1">
                     <div class="col-10">
-                        <h1 class="lead text-dark"><span class="_sorrisos">Sorrisos</span> <span class="_para">para</span> <strong><span class="_d">D</span><span class="_hid">ENT</span><span class="_i">I</span><span class="_hid">STAS</span></strong> <span class="_hid">e</span> <strong><span class="_hid">PAC</span><span class="_i2">I</span><span class="_hid">ENTES!</span></strong></h1>
+                        <h1 class="lead text-dark"><span class="_sorrisos">Sorrisos</span> <span class="_para">para</span> <strong><span class="_d">D</span><span class="_hid">ENT</span><span class="_i">I</span><span class="_hid">STAS</span></strong> <span class="_hid">e</span> <strong><span class="_hid">PAC</span><span class="_i2">I</span><span class="_hid">ENTES</span></strong><span class="_hid">!</span></h1>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                         </div>
                        -->
                         <div class="col-10 col-md-4 _btn">
-                            <a href="#teste" class="btn btn-block btn-lg btn-outline-light "><strong>Como funciona?</strong></a>
+                            <a href="#teste" class="btn btn-block btn-lg btn-light"><strong>Nos conheça!</strong></a>
                         </div>
                     </div>
                 </form>
@@ -100,7 +100,7 @@
             <div class="col-lg-6 my-auto showcase-text">
                 <h2>Solução para dentistas</h2>
                 <p class="lead mb-0">Menos atraso. Mais pacientes.</p>
-                <a href="#" class="mt-4 mb-0 btn btn-block btn-lg btn-outline-primary" data-toggle="modal" data-target="#modalDentistas">Como funciona?</a>
+                <a href="#" class="mt-4 mb-0 btn btn-block btn-lg btn-primary" data-toggle="modal" data-target="#modalDentistas">Como funciona?</a>
             </div>
         </div>
         <div class="row no-gutters">
@@ -109,7 +109,7 @@
             <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                 <h2>Excelente para pacientes</h2>
                 <p class="lead">Chegue no horário e receba por isso. Indique um amigo e <strong>também</strong> ganhe por isso.</p>
-                <a href="#" class="mt-4 mb-0 btn btn-block btn-lg btn-outline-primary" data-toggle="modal" data-target="#modalPacientes">Como funciona?</a>
+                <a href="#" class="mt-4 mb-0 btn btn-block btn-lg btn-primary" data-toggle="modal" data-target="#modalPacientes">Como funciona?</a>
             </div>
         </div>
 
@@ -175,16 +175,16 @@
                         </div>
                         <div class="col-12 col-md-12 mb-2 text-left">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="type" id="inlineRadio1" value="dentista" checked>
+                                <input class="form-check-input" type="radio" name="type" id="inlineRadio1" value="dentista" onclick="hideNeeded();" checked>
                                 <label class="form-check-label lead" for="inlineRadio1">Dentista</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="type" id="inlineRadio2" value="paciente">
+                                <input class="form-check-input" type="radio" name="type" id="inlineRadio2" value="paciente" onclick="showNeeded();">
                                 <label class="form-check-label lead" for="inlineRadio2">Paciente</label>
                             </div>
                         </div>
                         <div class="col-12 col-md-12 mb-2 text-left">
-                            <div class="form-check form-check-inline">
+                            <div id="_needed" class="form-check form-check-inline" style="display: none;">
                                 <input class="form-check-input" type="checkbox" id="needed" name="needed" class="btn btn-block btn-lg btn-primary"/>
                                 <label class="form-check-label lead" for="needed"><strong>Necessito de atendimento odontológico atuamente!</strong></label>
                             </div>
@@ -257,33 +257,49 @@
             </div>
 
             <div class="modal-body">
-                {{ Counter::showAndCount('dentista') }}
+                {{ Counter::count('dentista') }}
                 <div class="row">
-                    <div class="col-8">
-                        <h5> Você consulta e <strong class="text-primary">GANHA</strong> dinheiro! </h5>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-
-                        <h5> Você indica um paciente e <strong class="text-primary">GANHA</strong> dinheiro! </h5>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-
+                    <div class="col-7">
+                        <h5><span class="display-3 text-primary">1</span> Você consulta e <strong class="text-primary">GANHA</strong> dinheiro! </h5>
+                        <p> Chegando sem atrasos às suas consultas, receba <span class="text-success">cashback</span>!</p>
+                        <div class="text-center">
+                            <img class="img-fluid mt-3" style="width: 90%!important;" src="{{  asset('img/flow-paciente-2.png')  }}" alt="Fluxo de indicação e cashback para pacientes">
+                        </div>
                     </div>
+                    <div class="col-5">
+                        <div class="card bg-primary" style="width: 18rem;">
+                            <div class="card-body shadow-lg">
+                                <form class="text-center" action="{{ route('lead.store') }}" method="POST">
+                                    {{ csrf_field() }}
+                                    <span style="font-size: 1.5rem;"><strong class="text-light">Experimente agora!</strong></span>
+                                    <input type="hidden" name="type" value="dentista">
+                                    <input type="text" name="name" class="form-control form-control-lg mt-2 mb-2" placeholder="Seu nome...">
+                                    <input type="email" name="email" class="form-control form-control-lg mb-2" placeholder="Seu e-mail...">
+                                    <div class="form-check form-check-inline mb-2">
+                                        <input class="form-check-input" type="checkbox" id="needed" name="needed" class="btn btn-block btn-lg btn-primary"/>
+                                        <label class="form-check-label lead" for="needed"><strong class="text-light">Preciso de um dentista!</strong></label>
+                                    </div>
+                                    <button type="submit" class="btn btn-block btn-lg btn-light">Cadastrar!</button>
 
-                    <div class="col-4 col-md-4 mb-2">
-                        <form action="{{ route('lead.store') }}" method="POST">
-                            {{ csrf_field() }}
-                            <input type="text" name="name" class="form-control form-control-lg mt-5 mb-2" placeholder="Seu nome...">
-                            <input type="email" name="email" class="form-control form-control-lg mb-2" placeholder="Seu e-mail...">
-                            <button type="submit" class="btn btn-block btn-lg btn-primary">Cadastrar!</button>
-                        </form>
-
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <hr>
+                        <h5><span class="display-3 text-primary">2</span>  Você indica um paciente e <strong class="text-primary">GANHA</strong> dinheiro! </h5>
+                        <div class="mb-3">
+                            <ol>
+                                <li>Indique seu dentista a um(a) amigo(a) que precise de tratamento;</li>
+                                <li>Ele(a) vai ao consultório e realiza seu tratamento; </li>
+                                <li>Você e o(a) amigo(a) recebem <span class="text-success">cashback</span> da <span class="text-primary">SMILEW</span>!</li>
+                            </ol>
+                        </div>
+                        <div class="text-center">
+                            <img class="img-fluid" style="width: 90%!important;" src="{{  asset('img/flow-paciente-1.png')  }}" alt="Fluxo de indicação e cashback para pacientes">
+                        </div>
                     </div>
                 </div>
-
-
 
             </div>
             <div class="modal-footer">
@@ -303,7 +319,7 @@
 
             <div class="modal-header">
 
-                <h5 class="modal-title" id="modalPacientesLabel"> Smilew: <span class="lead">uma experiência nova para pacientes!</span> </h5>
+                <h5 class="modal-title" id="modalPacientesLabel"> <span class="text-primary">SMILEW:</span> <span class="lead">uma experiência nova para pacientes!</span> </h5>
 
                 <button class="close" type="button" data-dismiss="modal">
 
@@ -312,33 +328,45 @@
             </div>
 
             <div class="modal-body">
-                {{ Counter::showAndCount('paciente') }}
+                {{ Counter::count('paciente') }}
                 <div class="row">
                     <div class="col-7">
-                        <h5> Você consulta e <strong class="text-primary">GANHA</strong> dinheiro! </h5>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                        <img class="img-fluid mb-4" src="{{  asset('img/flow-paciente-1.png')  }}" alt="Fluxo de indicação e cashback para pacientes">
+                        <h5><span class="display-3 text-primary">1</span> Você consulta e <strong class="text-primary">GANHA</strong> dinheiro! </h5>
+                        <p> Chegando sem atrasos às suas consultas, receba <span class="text-success">cashback</span>!</p>
+                        <div class="text-center">
+                            <img class="img-fluid mt-3" style="width: 90%!important;" src="{{  asset('img/flow-paciente-2.png')  }}" alt="Fluxo de indicação e cashback para pacientes">
+                        </div>
+
                     </div>
                     <div class="col-5">
-                        <div class="card bg-light" style="width: 18rem;">
-                            <div class="card-body">
+                        <div class="card bg-primary" style="width: 18rem;">
+                            <div class="card-body shadow-lg">
                                 <form class="text-center" action="{{ route('lead.store') }}" method="POST">
                                     {{ csrf_field() }}
-                                    <h2>Experimente!</h2>
-                                    <input type="text" name="name" class="form-control form-control-lg mt-5 mb-2" placeholder="Seu nome...">
+                                    <span style="font-size: 1.5rem;"><strong class="text-light">Experimente agora!</strong></span>
+                                    <input type="hidden" name="type" value="paciente">
+                                    <input type="text" name="name" class="form-control form-control-lg mt-2 mb-2" placeholder="Seu nome...">
                                     <input type="email" name="email" class="form-control form-control-lg mb-2" placeholder="Seu e-mail...">
-                                    <button type="submit" class="btn btn-block btn-lg btn-primary">Cadastrar!</button>
+                                    <div class="form-check form-check-inline mb-2">
+                                        <input class="form-check-input" type="checkbox" id="needed" name="needed" class="btn btn-block btn-lg btn-primary"/>
+                                        <label class="form-check-label lead" for="needed"><strong class="text-light">Preciso de um dentista!</strong></label>
+                                    </div>
+                                    <button type="submit" class="btn btn-block btn-lg btn-light">Cadastrar!</button>
+
                                 </form>
                             </div>
                         </div>
                     </div>
                     <div class="col-12">
-                        <h5> Você indica um paciente e <strong class="text-primary">GANHA</strong> dinheiro! </h5>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                        <hr>
+                        <h5><span class="display-3 text-primary">2</span>  Você indica um paciente e <strong class="text-primary">GANHA</strong> dinheiro! </h5>
+                        <div class="mb-3">
+                            <ol>
+                                <li>Indique seu dentista a um(a) amigo(a) que precise de tratamento;</li>
+                                <li>Ele(a) vai ao consultório e realiza seu tratamento; </li>
+                                <li>Você e o(a) amigo(a) recebem <span class="text-success">cashback</span> da <span class="text-primary">SMILEW</span>!</li>
+                            </ol>
+                        </div>
                         <div class="text-center">
                             <img class="img-fluid" style="width: 90%!important;" src="{{  asset('img/flow-paciente-1.png')  }}" alt="Fluxo de indicação e cashback para pacientes">
                         </div>
@@ -355,5 +383,5 @@
 <!-- Bootstrap core JavaScript -->
 <script src="{{ asset('js/jquery.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-
+<script src="{{ asset('js/needed.js') }}"></script>
 @endsection

@@ -17,6 +17,8 @@ class NovoLead extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email');
+            $table->boolean('needed');
+            $table->enum('type',['dentista', 'paciente']);
             $table->timestamps();
         });
     }
