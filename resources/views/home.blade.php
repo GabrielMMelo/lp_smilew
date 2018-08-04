@@ -45,7 +45,7 @@
                         </div>
                        -->
                         <div class="col-10 col-md-6 _btn">
-                            <button onclick="animateScrollTo(500);" class="btn btn-block btn-xl btn-primary waves-effect waves-light"><strong>Nos conheça!</strong></button>
+                            <a href="#cadastro" class="btn btn-block btn-xl btn-primary waves-effect waves-light"><strong>Nos conheça!</strong></a>
                         </div>
                     </div>
                 </form>

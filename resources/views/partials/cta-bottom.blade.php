@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-9 mx-auto">
-                <h2 class="mb-4">Quer experimentar? Se cadastre agora!</h2>
+                <h2 class="mb-4">Quer experimentar? Cadastre-se agora!</h2>
             </div>
             <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
                 <form action="{{ route('lead.store') }}" method="POST">
@@ -27,18 +27,18 @@
                         </div>
                         <div class="col-12 col-md-12 mb-2 text-left">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="type" id="inlineRadio1" value="dentista" onclick="hideNeeded();" checked>
+                                <input class="form-check-input" type="radio" name="type" id="inlineRadio1" value="dentista" onclick="hideNeededBottom();" checked>
                                 <label class="form-check-label lead" for="inlineRadio1">Sou um <strong>Dentista</strong></label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="type" id="inlineRadio2" value="paciente" onclick="showNeeded();">
+                                <input class="form-check-input" type="radio" name="type" id="inlineRadio2" value="paciente" onclick="showNeededBottom();">
                                 <label class="form-check-label lead" for="inlineRadio2">Sou um <strong>Paciente</strong></label>
                             </div>
                         </div>
                         <div class="col-12 col-md-12 mb-2 text-left">
-                            <div id="_needed" class="form-check form-check-inline" style="display: none;">
-                                <input class="form-check-input" type="checkbox" id="needed" name="needed" class="btn btn-block btn-lg btn-primary"/>
-                                <label class="form-check-label lead" for="needed"><strong>Necessito de atendimento odontológico atuamente!</strong></label>
+                            <div id="_neededBottom" class="form-check form-check-inline" style="display: none;">
+                                <input class="form-check-input" type="checkbox" id="neededBottom" name="needed" class="btn btn-block btn-lg btn-primary"/>
+                                <label class="form-check-label lead" for="neededBottom"><strong>Necessito de atendimento odontológico atuamente!</strong></label>
                             </div>
                         </div>
                         <div class="col-12 col-md-5">

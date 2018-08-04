@@ -7,7 +7,7 @@
  */
 ?>
 
-<footer class="footer bg-light">
+<footer class="footer bg-white">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-6 h-100 text-center my-auto">
