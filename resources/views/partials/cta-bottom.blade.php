@@ -7,6 +7,7 @@
  */
 ?>
 
+<!-- TODO: fix name of form field on js file ("Sou um paciente") -->
 <section class="call-to-action text-white text-center">
     <div class="overlay"></div>
     <div class="container">
@@ -40,8 +41,8 @@
                                 <label class="form-check-label lead" for="needed"><strong>Necessito de atendimento odontológico atuamente!</strong></label>
                             </div>
                         </div>
-                        <div class="col-12 col-md-3">
-                            <button type="submit" class="btn btn-block btn-lg btn-primary">Cadastrar!</button>
+                        <div class="col-12 col-md-5">
+                            <button type="submit" class="btn btn-block btn-lg btn-primary waves-effect waves-light">Cadastrar!</button>
                         </div>
                     </div>
                 </form>

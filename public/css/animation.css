@@ -1,3 +1,27 @@
+/*
+
+// Tried to blink inactive tab
+
+.nav-tabs .nav-item .nav-link{
+
+    -webkit-animation: _attention 2s!important;
+    -o-animation: _attention 2s!important;
+    animation: _attention 2s!important;
+    animation-iteration-count: infinite!important;
+    animation-timing-function: ease-in!important;
+
+
+}
+
+@keyframes _attention {
+    0% {color: #363636!important;}
+    30%{color: yellow!important;}
+    50% {color: #363636!important;}
+    70% {color: yellow!important;}
+    100% {color: #363636!important;}
+}
+*/
+
 @keyframes _btn {
     0% {opacity: 0;}
     90% {opacity: 0;}
@@ -10,6 +34,10 @@
     100% {opacity: 1;}
 }
 
+@keyframes _tab {
+    0% {background: white;}
+    100% {background: #dddddd;}
+}
 
 @media screen and (max-width: 1027px){
     ._sorria{
@@ -159,9 +187,9 @@
     @keyframes __d {
         0% {transform: rotate(90deg); opacity: 1; }
         30% {transform: rotate(90deg); top: 0; left: 0; }
-        45% {transform: rotate(45deg); top: -100px; left: -62.5px; font-size: 5em!important;}
-        60% {transform: rotate(0deg); top: -170px; left: -125px; font-size: 3em!important;}
-        100% {transform: rotate(0deg); top: -170px; left: -125px; opacity: 0; font-size: 2em!important;}
+        45% {transform: rotate(45deg); top: -100px; left: -62.5px;}
+        60% {transform: rotate(0deg); top: -170px; left: -125px;}
+        100% {transform: rotate(0deg); top: -170px; left: -125px; opacity: 0;}
     }
 
     @keyframes __i {

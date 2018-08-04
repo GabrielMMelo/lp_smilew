@@ -19,8 +19,10 @@
     <title>Smilew</title>
 
     <!-- Bootstrap core CSS -->
-
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Material Design -->
+    <link href="{{ asset('css/mdb.min.css') }}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
 
@@ -32,8 +34,7 @@
     <!-- Custom styles for this template -->
     <link href="{{ asset('css/landing-page.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/animation.css') }}" rel="stylesheet">
-
-
+    <link href="{{ asset('css/tab.css') }}" rel="stylesheet">
 
 </head>
 

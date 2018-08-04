@@ -44,8 +44,8 @@
                             <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
                         </div>
                        -->
-                        <div class="col-10 col-md-4 _btn">
-                            <a href="#teste" class="btn btn-block btn-lg btn-light"><strong>Nos conheça!</strong></a>
+                        <div class="col-10 col-md-6 _btn">
+                            <button onclick="animateScrollTo(500);" class="btn btn-block btn-xl btn-primary waves-effect waves-light"><strong>Nos conheça!</strong></button>
                         </div>
                     </div>
                 </form>
@@ -55,51 +55,17 @@
 </header>
 
 
-<!-- Icons Grid -->
-<!--
-<section class="features-icons bg-light text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex">
-                        <i class="icon-screen-desktop m-auto text-primary"></i>
-                    </div>
-                    <h3>Fully Responsive</h3>
-                    <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex">
-                        <i class="icon-layers m-auto text-primary"></i>
-                    </div>
-                    <h3>Bootstrap 4 Ready</h3>
-                    <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex">
-                        <i class="icon-check m-auto text-primary"></i>
-                    </div>
-                    <h3>Easy to Use</h3>
-                    <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
--->
+<!-- Call to Action 1-->
+@include('partials.cta-top')
 
 <!-- Image Showcases -->
 @include('partials.show-case')
 
 <!-- Testimonials -->
-@include('partials.testimonials')
 
-<!-- Call to Action -->
-@include('partials.cta')
+
+<!-- Call to Action 2-->
+@include('partials.cta-bottom')
 
 <!-- Footer -->
 @include('partials.footer')
@@ -115,5 +81,10 @@
 <script src="{{ asset('js/jquery.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('js/needed.js') }}"></script>
+<script src="{{ asset('js/scroll.js') }}"></script>
+<script src="{{ asset('js/tab.js') }}"></script>
+<script src="{{ asset('js/modals.js') }}"></script>
+
+
 
 @endsection

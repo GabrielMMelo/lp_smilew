@@ -7,12 +7,20 @@
  */
 ?>
 
-<section class="showcase" id="teste">
+<section class="showcase" id="comoFunciona">
     <div class="container-flui p-0">
 
         <div class="row no-gutters">
-            <div class="col-lg-6 text-white showcase-img" style="background-image: url('{{asset('img/bg-showcase-22.jpg')}}');"></div>
-            <div class="col-lg-6 my-auto showcase-text">
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url('{{asset('img/bg-showcase-22.jpg')}}');">
+                <div class="mt-md-4 text-right text-dark" style="padding-left: 3rem; position: absolute; top: 0; right: 5px;">
+                    <h3>Solução para <span class="text-primary">dentistas</span></h3>
+                    <p class="lead mb-0">Menos atraso. Mais pacientes.</p>
+                </div>
+
+            </div>
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url('{{asset('img/bg-showcase-11.jpg')}}');"></div>
+
+            <div class="col-lg-6 " style="border-right: .5pt solid #cccccc;">
                 <div class="mt-md-4" style="padding-left: 3rem;">
                     <h2>Solução para <span class="text-primary">dentistas</span></h2>
                     <p class="lead mb-0">Menos atraso. Mais pacientes.</p>
@@ -30,29 +38,21 @@
                 </div>
 
             </div>
-        </div>
-        <div class="row no-gutters">
 
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{{asset('img/bg-showcase-11.jpg')}}');"></div>
-            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                <div class="mt-md-4" style="padding-left: 3rem; padding-right: 3rem;">
+            <!-- PACIENTES -->
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text" style="border-left: .5pt solid #cccccc;">
+
+                <!--<div class="mt-md-4" style="padding-left: 3rem; padding-right: 3rem;">
                     <h2>Excelente para <span class="text-primary">pacientes</span></h2>
                     <p class="lead">Chegue no horário e receba por isso.</p>
                     <p class="lead"> Indique um amigo e <strong>também</strong> ganhe por isso.</p>
-                </div>
+                </div>-->
 
-                <div class="row justify-content-center mb-md-5 mb-lg-0">
-                    <div class="col-6">
-                        <a href="#" class="mt-4 mb-2 btn btn-block btn-lg btn-primary" data-toggle="modal" data-target="#modalPacientes">Como funciona?</a>
-                    </div>
-                </div>
-                <div class="row text-right d-lg-flex d-sm-none d-none">
-                    <div class="col-6"> </div>
-                    <div class="col-6 mb-5" style="position: relative; right: 0!important;">
-                        <img class="img-fluid" src="{{  asset('img/arrow-2.png')  }}" alt="">
-                    </div>
-                </div>
+            @include('partials.tab')
             </div>
+        </div>
+
+
 
         </div>
 

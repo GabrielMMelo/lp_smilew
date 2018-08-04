@@ -13,9 +13,9 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                    <img class="img-fluid rounded-circle mb-3" src="{{asset('img/testimonials-1.jpg')}}" alt="">
-                    <h5>Margaret E.</h5>
-                    <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+                    <img class="img-fluid rounded-circle mb-3" src="{{asset('img/client-1.jpg')}}" alt="">
+                    <h5>Dr. Natanael</h5>
+                    <p class="font-weight-light mb-0">"A <span class="text-primary">SMILEW</span> diminiu em 30% o atraso de meus pacientes!"</p>
                 </div>
             </div>
             <div class="col-lg-4">
