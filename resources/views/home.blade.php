@@ -45,7 +45,7 @@
                         </div>
                        -->
                         <div class="col-10 col-md-6 _btn">
-                            <a href="#cadastro" class="btn btn-block btn-xl btn-primary waves-effect waves-light"><strong>Nos conheça!</strong></a>
+                            <a id="_main-btn" href="#cadastro" class="btn btn-block btn-xl btn-primary waves-effect waves-light"><strong>Nos conheça!</strong></a>
                         </div>
                     </div>
                 </form>

@@ -21,3 +21,9 @@ window.setInterval(function(){
 
 
 
+$(function() {
+    $('#_main-btn').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 900, 'swing');
+    });
+});
