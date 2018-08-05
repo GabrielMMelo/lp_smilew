@@ -27,3 +27,8 @@ $(function() {
         $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 900, 'swing');
     });
 });
+
+
+$('.carousel').carousel({
+    interval: 4000
+})

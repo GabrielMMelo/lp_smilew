@@ -35,7 +35,7 @@
             <div class="col-lg-10 col-md-10 col-10 mt-2 text-center my-auto">
                 <h5 class="text-muted mt-4"><i class="far fa-times-circle text-danger"></i> Sua agenda <span class="text-danger">não está</span> tão cheia quanto esperado?</h5>
                 <div class="mt-4 mb-4">
-                    <h5><i class="far fa-check-circle text-primary"></i> A <span class="text-primary lead">SMILEW</span> estimula seus pacientes a trazerem <span class="text-danger">mais pacientes</span> pra você! </h5>
+                    <h5><i class="far fa-check-circle text-primary"></i> A <span class="text-primary lead">SMILEW</span> estimula seus pacientes a trazerem <span class="text-primary">mais pacientes</span> pra você! </h5>
                 </div>
             </div>
         </div>
