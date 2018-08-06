@@ -33,7 +33,7 @@
                 <i class="fas fa-tooth display-2" style="transform: rotate(20deg);"></i>
             </div>
 
-            <div class="col-8 text-center rounded bg-white text-primary mt-5">
+            <div class="col-8 text-center rounded bg-white text-primary my-5">
 
                 <div class="my-3 ">
                     <div class="row">

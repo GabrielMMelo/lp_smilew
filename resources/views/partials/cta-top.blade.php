@@ -28,7 +28,7 @@
                             <div class="carousel-item active">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-5 col-md-5 col-sm-5 col-7 my-5">
-                                        <img class="img-fluid rounded-circle _shadow" src="{{asset('img/client-1.jpg')}}" alt="" style="border-radius: 10px;">
+                                        <img class="img-fluid rounded-circle _shadow" src="{{asset('img/dentist-1.png')}}" alt="" style="border-radius: 10px;">
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-10 my-auto _testimonial">
 
@@ -42,12 +42,12 @@
                             <div class="carousel-item">
                                 <div class="row justify-content-center">
                                     <div class="col-lg-5 col-md-5 col-sm-5 col-7 my-5">
-                                        <img class="img-fluid rounded-circle _shadow" src="{{asset('img/client-1.jpg')}}" alt="" style="border-radius: 10px;">
+                                        <img class="img-fluid rounded-circle _shadow" src="{{asset('img/pacient-2.png')}}" alt="" style="border-radius: 10px;">
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-10 my-auto _testimonial">
 
-                                        <p class="mb-0">"A <strong class="text-light">SMILEW</strong> diminuiu em <strong class="text-light">30%</strong> o atraso de meus pacientes!"</p>
-                                        <footer class="blockquote-footer text-light">Dr. Natanael</footer>
+                                        <p class="mb-0">"Indiquei meu dentista a um vizinho e ganhei <strong class="text-light">dinheiro</strong> por isso. Foi <strong class="text-light">incrível</strong>!"</p>
+                                        <footer  class="blockquote-footer text-light">Maria Rita, paciente</footer>
 
                                     </div>
 

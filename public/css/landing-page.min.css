@@ -12,6 +12,14 @@ body{font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif}h1,h2,h3,h4,h5
     ._testimonial footer{
         font-size: 2vw;
     }
+
+    ._testimonial2 p{
+        font-size: 2.2vw;
+    }
+
+    _footer2{
+        font-size: 2vw;
+    }
 }
 
 @media screen and (max-width: 756px){
@@ -19,7 +27,15 @@ body{font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif}h1,h2,h3,h4,h5
         font-size: 5vw;
     }
 
+    ._testimonial2 p{
+        font-size: 4.5vw;
+    }
+
     ._testimonial footer{
+        font-size: 4vw;
+    }
+
+    _testimonial2 footer{
         font-size: 4vw;
     }
 }
@@ -29,8 +45,16 @@ body{font-family:Lato,'Helvetica Neue',Helvetica,Arial,sans-serif}h1,h2,h3,h4,h5
         font-size: 7vw;
     }
 
+    ._testimonial2 p{
+        font-size: 6.5vw;
+    }
+
     ._testimonial footer{
         font-size: 5vw;
+    }
+
+    _testimonial2 footer{
+        font-size: 5vw!important;
     }
 
     ._goodForDentists{
