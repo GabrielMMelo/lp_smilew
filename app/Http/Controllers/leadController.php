@@ -18,6 +18,12 @@ class leadController extends Controller
         $lead->type = $request->input('type');
         $lead->save();
 
-        return redirect()->back();
+        if ($lead->type == "paciente"){
+            return view('response')->with(['type' => "pacientes", 'name' => $lead->name]);
+        }
+
+        else if($lead->type == "dentista"){
+            return view('response')->with(['type' => "dentistas", 'name' => $lead->name]);
+        }
     }
 }

@@ -32,7 +32,7 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-10 my-auto _testimonial">
 
-                                        <p class="mb-0">"A <strong class="text-light">SMILEW</strong> diminiu em <strong class="text-light">30%</strong> o atraso de meus pacientes!"</p>
+                                        <p class="mb-0">"A <strong class="text-light">SMILEW</strong> diminuiu em <strong class="text-light">30%</strong> o atraso de meus pacientes!"</p>
                                         <footer class="blockquote-footer text-light">Dr. Natanael</footer>
 
                                     </div>
@@ -46,7 +46,7 @@
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-6 col-10 my-auto _testimonial">
 
-                                        <p class="mb-0">"A <strong class="text-light">SMILEW</strong> diminiu em <strong class="text-light">30%</strong> o atraso de meus pacientes!"</p>
+                                        <p class="mb-0">"A <strong class="text-light">SMILEW</strong> diminuiu em <strong class="text-light">30%</strong> o atraso de meus pacientes!"</p>
                                         <footer class="blockquote-footer text-light">Dr. Natanael</footer>
 
                                     </div>

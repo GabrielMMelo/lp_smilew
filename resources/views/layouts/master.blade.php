@@ -36,6 +36,10 @@
     <link href="{{ asset('css/animation.css') }}" rel="stylesheet">
     <link href="{{ asset('css/tab.css') }}" rel="stylesheet">
 
+    @section('more-links')
+
+    @show
+
 </head>
 
 <body>
