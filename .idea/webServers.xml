@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4baf8431-00d5-4b6b-abc2-fcd945ce60ea" name="hostinger" url="http://185.201.11.44">
+        <fileTransfer host="185.201.11.44" port="65002" rootFolder="/home/u699977468/public_html" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="65002" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
